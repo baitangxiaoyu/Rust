@@ -6,8 +6,21 @@ fn greet_world() {
         print!("{}\n", item)
     }
 }
+fn test(){
+      // 1..5左闭右开
+    for i in 1..5 {
+        println!("{}", i)
+    }
+    // (1..=5)左闭右闭
+    for i in (1..=5).rev() {
+        println!("{}", i)
+    }
+    let number: i64 = (1..=5).sum();
+    println!("{}",number)
+}
 
 fn main() {
+    test();
     greet_world();
     let penguin_data = "\
   common name,length (cm)
